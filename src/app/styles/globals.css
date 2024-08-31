@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-stroke {
+	-webkit-text-stroke: 3px rgb(34, 34, 30);
+	text-shadow: 0 0 0 #fff;
+	transition: all 250ms;
+  }
+  .text-stroke:hover {
+	text-shadow: 4px 4px 0 #fff;
+	transform: translate(-0.5px, -0.5px)
+}
+  *{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
