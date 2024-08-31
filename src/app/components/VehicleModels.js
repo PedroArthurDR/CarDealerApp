@@ -5,7 +5,7 @@ import axios from 'axios'
 import { CSSTransition } from 'react-transition-group'
 import './VehicleModels.css' // Import the CSS file for animations
 
-function VehicleModels({ makeId, year }) {
+export default function VehicleModels({ makeId, year }) {
   const [vehicleModels, setVehicleModels] = useState([])
   const [selectedModel, setSelectedModel] = useState(null) // State to track the selected model
   const [error, setError] = useState(null)
@@ -37,5 +37,3 @@ function VehicleModels({ makeId, year }) {
     </div>
   )
 }
-
-export default VehicleModels
